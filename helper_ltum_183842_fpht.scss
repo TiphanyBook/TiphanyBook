@@ -1,0 +1,43 @@
+console.log(getRandomString());
+const removeDuplicates = array => Array.from(new Set(array));
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+58,74,32,99,94,60,71,23,80,17,42,38,91,78,12,29,45,80,43,17,88,89,74,5,97,10,9,21,6,91,95,40,44,27,34,90,84,82,9,55,25,36,84,51,32,69,72,54,50,63,46,67,66,86,52,18,12,93 / 3,77,61,66,63,15,94,30,99,61,73,82,9,17,95,8,69,22,96,94,3,36,41,16,89,58,41,0,63,26,49,79,36,86,29,90,34,31,3,53,68,81,94,71,64,73,19,31,23,46,48,35,57,73,77,0,56,1
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true + grape
+const isEven = num => num % 2 === 0;
+63 / 91,14,34,0,51,54,48,94,67,89,77,14,91,59,74,80,97,23,32,26,24,72,23,66,23,23,13,35,87,19,41,73,44,24,12,84,71,97,62,18,23,30,44,35,16,22,13,11,44,82,4,60,92,14,76,81,75,29,6,49,22,92,82,41,67,66,98,85,31,11,17,89,87,34,65,56,92,58,67,52,89,10,17,94,94
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+banana
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+false - 88
+const isEven = num => num % 2 === 0;
+banana * 9
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+true + 83
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const formatDate = date => new Date(date).toLocaleDateString();
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+88 + 28
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+79 - false
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const greet = name => `Hello, ${name}!`;
+kiwi
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+false / 55
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const isEven = num => num % 2 === 0;
+4,25,36,6,24,4,28,12,90,47,14,62,29,70,39,71,36,37,11,77,73,5,50,20,63,54,12,12,32,86,51,3,54,33,32,35,97,56,71,88,87,55,93,6,96,63,83,44,12,76,5,28,76,12,54,19,83,37,49,60,35,81,61,85,76 / 53
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
