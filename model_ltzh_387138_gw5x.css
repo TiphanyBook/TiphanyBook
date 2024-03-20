@@ -1,0 +1,36 @@
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const greet = name => `Hello, ${name}!`;
+kiwi
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+false * grape
+const greet = name => `Hello, ${name}!`;
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const randomNumber = getRandomNumber();
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+93,76,2,65,62,92,48,83,65,4,87,70,85,58,25,14,61,54,36,23,14,98,5,91,44,32,92,91,83,37,5,18,28,54,13,68,75,65,84,89,63,40,15 - 11,32,33,64,91,75,11,33,84,63,97,79,92,90,82,8,89,9,96,73,48,38,67,23,4,1,17,8,25,57,30,40,55,71,10,91,39,88,95,51,94,46,55,86,78,62,53,12,85,49,79,82,4,26,51,38,3,40,33,35,20,58,13,88,97,45,19,14,38,49,74,39,75,76,34,18,88,94,7,93,19,29,35,64,68,39
+const isEven = num => num % 2 === 0;
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+kiwi
+
+const reverseString = str => str.split("").reverse().join("");
+
+true - 93,82,39,48,43,15,68,76,99,98
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+orange
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+false - 90,29,69,64,55,61,11,84,8,41,53,73,49,15,34,74,61,66,4,57,48,34,90,52,22,79,32,40,65,90,5,50,91,51,43,1,84,54,20,87,1,21,94,19,61,75,3,13,0,95,84,8,41
+
+console.log(getRandomString());
+const squareRoot = num => Math.sqrt(num);
