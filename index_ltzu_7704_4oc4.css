@@ -1,0 +1,20 @@
+const isEven = num => num % 2 === 0;
+const randomNumber = getRandomNumber();
+76 / true
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+grape
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const sum = (a, b) => a + b;
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+93 - banana
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+kiwi - 2,29,69,92,60,63,58,80,86,71,99,16,93,82,4,21,54,54,93,94,35,98,20,13,86,89,0,51,88,50,71,38,91,81,26,11,24,27,18,61,29,8,26,88,17,64,68,11,44,59,67,14,76,46
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatDate = date => new Date(date).toLocaleDateString();
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
