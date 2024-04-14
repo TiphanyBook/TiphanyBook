@@ -1,0 +1,7 @@
+const getUniqueValues = array => [...new Set(array)];
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+90 - false
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+function addNumbers(a, b) { return a + b; }
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
