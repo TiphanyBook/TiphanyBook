@@ -1,0 +1,41 @@
+46,10,36,32,90,92,72,47,39,54,63,21,83,88,41,29,95,5,67,53,96,39,97,66,90,55,7,64,17,44,10,24,30,74,22,46,82,48 / 51
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+7 + 75,8,51,77,96,99,44,36,40,28,90,80,17,80,90,51,77,36,88,21,35,86,89,4,87,44,91,79,15,81,9,59,72,4,45,39,73,24,5,70,46,13,1,60,81,17,1,62,83,75,95,34,3,65,31,22,12,1,73,60,39,94,81,90,27,44,8,80,90,23,32,93,14,84,79,42,77,93,72,77,57,66,85
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+grape
+
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+apple * 30,73,53,17,80,24,74,46,88,57,62,40,39,63,24,68,86,39,82,10,89,62,96,99,84,38,3,98,7,20,19,68,45,28,70,26,10,68,80,52,19,50,96,43,11,24,70,48,0,81,82,44
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const multiply = (a, b) => a * b;
+
+72 * grape
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+const variableName = getRandomNumber();
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+false - 91
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+apple
+
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+1 / 41,73,40,6
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+kiwi + 36,58,24,16,28,24,20,81,57,52,61,67,35,50,36,75,61,80,17,77,95,19,51,21,51,67,14,37,52,95,52
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+// This is a comment
+
