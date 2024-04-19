@@ -1,0 +1,32 @@
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+banana
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+orange * orange
+const reverseWords = str => str.split(" ").reverse().join(" ");
+37 * true
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const variableName = getRandomNumber();
+
+grape + false
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+true / kiwi
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+apple + true
+const capitalizeString = str => str.toUpperCase();
+
+// This is a comment
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+grape
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+77 - 54,83,74,67,21,10,11,53,29,76,25,64,90,69,94,80,78,7,46,84,65,26,12,31,16,86,74,81,21,6,67,21,94,25,65,70,27,57,30,21,76,71,3,29,86,18,63,4,96,56,75,82,33,9,23,1
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
