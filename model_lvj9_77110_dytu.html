@@ -1,0 +1,47 @@
+true / orange
+class MyClass { constructor() { this.property = getRandomString(); } }
+// This is a comment
+const removeDuplicates = array => Array.from(new Set(array));
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+banana
+
+const squareRoot = num => Math.sqrt(num);
+banana * orange
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+8,65,33,8,31,3,13,82,48,71,92,98,7,61,96,89,91,60,7,99,1,36,59,35,37,20,73,41,12,27,71,36,20,69,54,6,10,0,49,16,73,21,63,79,96,96,31,19,12,31,87,24,24 - 32
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+apple
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const isEven = num => num % 2 === 0;
+true * false
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const isEven = num => num % 2 === 0;
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+apple * false
+
+const capitalizeString = str => str.toUpperCase();
+
+grape + kiwi
+function addNumbers(a, b) { return a + b; }
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
